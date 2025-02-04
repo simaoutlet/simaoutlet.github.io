@@ -1,0 +1,36 @@
+{
+  "en": {
+    "motto": "We provide the best goods of Laleli and Osmanbey fabrics.",
+    "location": "Kinalitepe Sokak 28A, Gungoren, Istanbul, Turkey",
+    "google_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.932755235285!2d28.888904999999998!3d41.004844999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cabb13ffbd16cf%3A0xafe240496abf0570!2z...",
+    "gallery_heading": "Explore a variety of selection",
+    "gallery_subtext": "Join our Telegram channel and access the latest selection.",
+    "products": [
+      { "image": "product1.jpg", "description": "Elegant Dress" },
+      { "image": "product2.jpg", "description": "Stylish Shirt" },
+      { "image": "product3.jpg", "description": "Casual Pants" }
+    ],
+    "social": {
+      "telegram": "https://t.me/SimaOutlet",
+      "whatsapp": "https://wa.me/yourshopnumber",
+      "instagram": "https://instagram.com/SimaOutlet"
+    }
+  },
+  "tr": {
+    "motto": "Laleli ve Osmanbey kumaşlarının en iyi ürünlerini sağlıyoruz.",
+    "location": "Kınalıtepe Sokak 28A, Güngören, İstanbul, Türkiye",
+    "google_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.932755235285!2d28.888904999999998!3d41.004844999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cabb13ffbd16cf%3A0xafe240496abf0570!2z...",
+    "gallery_heading": "Çeşitli seçenekleri keşfedin",
+    "gallery_subtext": "Telegram kanalımıza katılın ve en yeni koleksiyona erişin.",
+    "products": [
+      { "image": "product1.jpg", "description": "Şık Elbise" },
+      { "image": "product2.jpg", "description": "Modern Gömlek" },
+      { "image": "product3.jpg", "description": "Rahat Pantolon" }
+    ],
+    "social": {
+      "telegram": "https://t.me/simaoutletistanbul",
+      "whatsapp": "https://wa.me/+905300970096",
+      "instagram": "https://instagram.com/sima.outlet"
+    }
+  }
+}
