@@ -1,16 +1,18 @@
-{
-  "en": {
-    "welcome": "We provide the best goods of Laleli and Osmanbey fabrics.",
-    "location": "Location: Kinalitepe Sokak 28A, Gungoren, Istanbul, Turkey",
-    "explore": "Explore a variety of selection",
-    "contact": "Contact",
-    "language": "Language"
-  },
-  "tr": {
-    "welcome": "Laleli ve Osmanbey kumaşlarının en iyisini sunuyoruz.",
-    "location": "Konum: Kınalitepe Sokak 28A, Güngören, İstanbul, Türkiye",
-    "explore": "Çeşitli seçenekleri keşfedin",
-    "contact": "İletişim",
-    "language": "Dil"
-  }
+document.addEventListener("DOMContentLoaded", () => {
+    let language = localStorage.getItem("lang") || "en"; // Default language: English
+    setLanguage(language);
+});
+
+function setLanguage(lang) {
+    localStorage.setItem("lang", lang);
+
+    fetch("lang.json")
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById("welcome-text").innerText = data[lang].welcome;
+            document.getElementById("office-place").innerText = data[lang].location;
+            document.getElementById("explore-text").innerText = data[lang].explore;
+            document.getElementById("contact-text").innerText = data[lang].contact;
+        })
+        .catch(error => console.error("Error loading language file:", error));
 }
