@@ -309,82 +309,75 @@ li{
     padding: 10px;
 }
 
-/*Header*/
+/* Header */
 
-    .header-cta .small{
+.header-cta .small {
     background-color: #C4AC6C;
     color: #FCFBF9;
-    padding: 0px 40px;
-    vertical-align: middle;
+    padding: 10px 40px; /* Added vertical padding for better touch targets */
     text-align: center;
     letter-spacing: 0.15em;
-    transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out;
 }
-    .visible-nav{
-        text-transform: uppercase; 
-        margin: 83px 58px;
-    }
-    header.smaller .visible-nav{
-        text-transform: uppercase; 
-        margin: 53px 40px;
-    }
-    .xs-nav{
-        padding: 10px;
-        font-size: 16px;
-        word-spacing: 10px;
-        margin: 10px ;
-    }
 
-    .nav-style{
-        background: #C3AB69;
-        width: 150px;
-        height: 30px;
-        padding-top: 10px;
-    }
-
-   
-    header.smaller {
-        height: 75px; 
-        margin: 0 !important;
-        padding: 0;
-        /*transition:.5s;*/
-    }
-   
-
-    header.smaller nav {
-        margin: 0 !important;
-        padding: 26px 0px;
-        /*transition:1.5s;*/
-    }
-
-    .last-child{
-      background: #BFA55E;
-      padding: 51px; 
-      line-height: 100px;
-      text-transform: uppercase;
-    }
-
-    header.smaller nav .last-child {
-    margin: 0px !important;
-    padding: 55px 32px 26px 30px;
-    /*transition: all 0.5s ease 0s;*/
-    line-height: 13px;
-    /*transition:1.5s;*/
+.visible-nav {
+    text-transform: uppercase;
+    margin: 20px; /* Reduced margin for mobile view */
+    display: flex; /* Use flex for better alignment */
+    gap: 15px; /* Space between links */
 }
-    
 
-   
-    header.smaller .brand {
-        font-size: 20px;
-        text-transform: uppercase !important;
-        margin: 8px !important;
-        position: absolute;
-        border: none;
-        /*transition:1.5s;*/
-    }
-    
+header.smaller .visible-nav {
+    margin: 10px; /* Further reduced for smaller screens */
+}
 
-    .header-cta .smaller {
+.xs-nav {
+    padding: 10px;
+    font-size: 16px;
+    word-spacing: 10px;
+    margin: 10px;
+}
+
+.nav-style {
+    background: #C3AB69;
+    width: 150px;
+    height: 30px;
+    padding-top: 10px;
+}
+
+header.smaller {
+    height: 75px;
+    margin: 0 !important;
+    padding: 0;
+}
+
+header.smaller nav {
+    margin: 0 !important;
+    padding: 20px 0; /* Adjusted for better spacing */
+}
+
+.last-child {
+    background: #BFA55E;
+    padding: 10px; /* Reduced padding for better layout */
+    line-height: 1.5; /* Adjusted for better text readability */
+    text-transform: uppercase;
+}
+
+header.smaller nav .last-child {
+    margin: 0 !important;
+    padding: 5px 20px; /* Adjusted padding for smaller view */
+    line-height: normal; /* Reset line height for better alignment */
+}
+
+header.smaller .brand {
+    font-size: 20px;
+    text-transform: uppercase !important;
+    margin: 8px !important;
+    position: absolute;
+    left: 10px; /* Position the logo */
+}
+
+.header-cta .smaller {
     background-color: #c4ac6c;
     color: #fcfbf9;
 }
@@ -394,34 +387,48 @@ li{
     text-transform: uppercase !important;
     margin: 18px !important;
     position: absolute;
+    left: 10px; /* Position the logo */
     border: 6px solid #BFA55E;
     padding: 5px;
     transition: 0.4s;
 }
-#intro-text{
+
+#intro-text {
     margin-top: 20px !important;
     position: fixed;
 }
-.top-margin{
+
+.top-margin {
     margin-top: 20px !important;
 }
-.top-text{
+
+.top-text {
     font-weight: bold;
     color: white;
 }
 
-/*Functions*/
-.slide-img{
-    cursor: pointer;
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .visible-nav {
+        flex-direction: column; /* Stack links vertically on mobile */
+        margin: 0; /* Remove margin for mobile */
+    }
+
+    .brand {
+        font-size: 24px; /* Smaller logo font size on mobile */
+        margin: 5px; /* Reduced margin */
+    }
+
+    header.smaller {
+        height: auto; /* Allow header to grow on mobile */
+    }
+
+    header.smaller nav {
+        padding: 10px 0; /* Less padding on mobile */
+    }
 }
 
-.function-text {
-    font-size: 21px;
-    letter-spacing: 1px;
-    word-spacing: 3px;
-    line-height: 34px;
-    color: #1C1C1C;
-}
+
 /*Services*/
 .column-service{
     background: #F3F3F0;
