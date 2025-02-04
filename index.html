@@ -1,146 +1,48 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js" lang="en-US">
-<!--<![endif]-->
-
+<html lang="en">
 <head>
-    <title>Sima Outlet</title>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merriweather:400,700">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
-    
-    <link rel="stylesheet" href="css/animate.min.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SimaOutlet</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
- 
-<body>    
-    <header id="header" class=" navbar-fixed-top">
-	    <a class="brand" href="index.html">
-		    <img src="images/logo.png" width="160" alt="Logo">
-	    </a>
-	    <a
-	    </a>
-	    <a
-	    </a>
-	    <nav class="navbar-right hidden-xs">
-		    <a href="http://simaoutlet.github.io/tr/index.html" hreflang="tr">TR</a>
-		    <a class="active" href="http://simaoutlet.github.io/index.html" hreflang="en-US">EN</a>
-	    </nav>
-	    <div class="visible-nav navbar-right visible-xs">
-		    <a href="tr/index.html" hreflang="tr">TR</a>
-		    <a class="active" href="index.html" hreflang="en-US">EN</a>
-		    <a href="#contact">Contact</a>
-	    </div>
-    </header>
-	<div class="intro white">
-		<div class="container wow animated fadeInUp">
-			<p class="lead-creative top-margin" >We provide the best goods of Laleli and Osmanbey fabrics.
-			</p>
-	  		
-	  		<p id="office-place" class="office-place">Location: Kinalitepe Sokak 28A, Gungoren, Istanbul, Turkey</strong></p>
-			<p id="office-place" class="office-place"> </strong></p>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.932755235285!2d28.888904999999998!3d41.004844999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cabb13ffbd16cf%3A0xafe240496abf0570!2zQWJkdXJyYWhtYW4gTmFmaXogR8O8cm1hbiwgS8SxbmFsxLF0ZXBlIFNrLiBObzoyOCwgMzQxNzMgR8O8bmfDtnJlbi_EsHN0YW5idWwsIFTDvHJraXll!5e0!3m2!1sen!2s!4v1738664239262!5m2!1sen!2s" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  		</div><!-- /.container -->
-  	</div><!-- /.intro -->
+<body>
+  <header>
+    <img id="logo" src="images/logo.png" alt="SimaOutlet Logo">
+    <h2 id="motto"></h2>
+    <div id="language-switcher">
+      <button onclick="setLanguage('en')">English</button>
+      <button onclick="setLanguage('tr')">Türkçe</button>
+    </div>
+  </header>
 
-	<div class="section" id="members">
-	    <div class="container">
-	        <h2>Explore a variety of selection</h2>
-	        <hr>
-	        <p class="lead-creative-banner">
-	            Click on any of the images to join our <a href="https://t.me/simaoutletistanbul" target="_blank">Telegram</a> channel and access the latest selection.
-	        </p>
-	        <div class="row">
-	            <div class="col-md-4">
-	                <figure class="wow animated fadeInLeft">
-	                    <a href="https://t.me/simaoutletistanbul" target="_blank">
-	                        <img class="border-img img-responsive center-block" src="images/first.jpg" alt="no1" width="280" height="280">
-	                    </a>
-	                </figure>
-	            </div>
-	            <div class="col-md-4">
-	                <figure class="wow animated fadeInDown">
-	                    <a href="https://t.me/simaoutletistanbul" target="_blank">
-	                        <img class="border-img img-responsive center-block" src="images/second.jpg" alt="no2" width="280" height="280">
-	                    </a>
-	                </figure>
-	            </div>
-	            <div class="col-md-4">
-	                <figure class="wow animated fadeInRight">
-	                    <a href="https://t.me/simaoutletistanbul" target="_blank">
-	                        <img class="border-img img-responsive center-block" src="images/third.jpg" alt="no3" width="280" height="280">
-	                    </a>
-	                </figure>
-	            </div>
-	        </div>
-	    </div>
-	</div><!-- members -->
+  <section id="location">
+    <h2>Location</h2>
+    <p id="address"></p>
+    <div id="map"></div>
+  </section>
 
-  	
-  	<footer id="site-footer">
-  		<div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-    	  			<span>&copy; 2025 all rights reserved.</span>
-                </div>
-                <div class="col-sm-6">
-                    <ul class="networks">
-                        <li><a href="https://t.me/simaoutletistanbul"><span class="telegram">Telegram</span></a></li>
-                        <li><a href="https://instagram.com/sima.outlet"><span class="instagram">Instagram</span></a></li>
-                    </ul>
-                </div>
-            </div>
-  		</div><!-- /.container -->
-  	</footer>
+  <section id="products">
+    <h2 id="gallery-heading"></h2>
+    <p id="gallery-subtext"></p>
+    <div id="product-gallery"></div>
+  </section>
 
-  	<script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/classie.js"></script>
-  	<script>
-  	    function init() {
-  	        window.addEventListener('scroll', function(e){
-  	            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-  	                shrinkOn = 300,
-  	                header = document.querySelector("header");
-  	            if (distanceY > shrinkOn) {
-  	                classie.add(header,"smaller");
-  	            } else {
-  	                if (classie.has(header,"smaller")) {
-  	                    classie.remove(header,"smaller");
-  	                }
-  	            }
-  	        });
-  	    }
-  	    window.onload = init();
-  	</script>
-    <script type="text/javascript">
-     	new WOW().init();
-    </script>
-    <script type="text/javascript">
-        $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-          if (target.length) {
-            $('html,body').animate({
-              scrollTop: target.offset().top
-            }, 1000);
-              return false;
-            }
-          }
-        });
-      });
+  <footer>
+    <h2>Follow Us</h2>
+    <div class="social-links">
+      <a href="#" id="telegram" class="social-link">
+        <img src="icons/telegram.png" alt="Telegram"> Telegram
+      </a>
+      <a href="#" id="whatsapp" class="social-link">
+        <img src="icons/whatsapp.png" alt="WhatsApp"> WhatsApp
+      </a>
+      <a href="#" id="instagram" class="social-link">
+        <img src="icons/instagram.png" alt="Instagram"> Instagram
+      </a>
+    </div>
+  </footer>
 
-    </script>
+  <script src="scripts.js"></script>
 </body>
 </html>
